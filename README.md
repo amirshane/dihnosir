@@ -19,7 +19,8 @@ scikit-learn requires:
 User installation and use
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 To install DIHNOSIR simply download the 'dihnosir.py' and 'dihnosir_helper.py' files and store them in the same directory. DIHNOSIR's documentation is contained in these two files.
-~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Development
 -----------
 We encourage users to experiment with and modify DIHNOSIR and would appreciate if said users shared their modifications or discoveries with us.
