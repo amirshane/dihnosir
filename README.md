@@ -1,9 +1,7 @@
 DIHNOSIR: Density-Independent High Noise Optimized Sorting by Iterative Refinement
-============
+==================================================================================
 
-DIHNOSIR is a clustering algorithm contained in a Python module built using scikit-learn and NetworkX and distributed under the GNU GPLv3.0 license.
-
-The project was started in 2017 by Amir Shanehsazzadeh and Dr. Roland L. Dunbrack Jr. at the Dunbrack Lab at Fox Chase Cancer Center.
+DIHNOSIR is a clustering algorithm contained in a Python module built using scikit-learn and NetworkX and distributed under the GNU GPLv3.0 license. The project was started in 2017 by Amir Shanehsazzadeh and Dr. Roland L. Dunbrack Jr. at the Dunbrack Lab at Fox Chase Cancer Center.
 
 Installation
 ------------
@@ -26,7 +24,7 @@ To install DIHNOSIR simply download the 'dihnosir.py' and 'dihnosir_helper.py' f
 Development
 -----------
 
-We encourage users to use or modify DIHNOSIR and would appreciate if said users shared their modifications or discoveries with us.
+We encourage users to experiment with and modify DIHNOSIR and would appreciate if said users shared their modifications or discoveries with us.
 
 Help and Support
 ----------------
