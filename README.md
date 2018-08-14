@@ -8,7 +8,6 @@ Installation
 
 Dependencies
 ~~~~~~~~~~~~
-
 scikit-learn requires:
 
 - Python (>= 3.4)
@@ -18,7 +17,6 @@ scikit-learn requires:
 
 User installation and use
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
 To install DIHNOSIR simply download the 'dihnosir.py' and 'dihnosir_helper.py' files and store them in the same directory. DIHNOSIR's documentation is contained in these two files.
 
 Development
