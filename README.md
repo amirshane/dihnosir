@@ -8,13 +8,12 @@ Installation
 
 Dependencies
 ~~~~~~~~~~~~
-scikit-learn requires:
+DIHNOSIR requires:
 
 - Python (>= 3.4)
 - Scikit-learn (>= 0.19.2)
 - NetworkX (>= 2.1)
 - NumPy (>= 1.8.2)
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 User installation and use
 ~~~~~~~~~~~~~~~~~~~~~~~~~
