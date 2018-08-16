@@ -213,7 +213,7 @@ def subclusters(X, n, minPts_min, silhouette_threshold, metric = 'precomputed'):
                 class_member_mask = (labels == k)
                 subcluster = indices[class_member_mask & core_samples_mask]
                 if (len(subcluster) > 0):
-                   if (silhouette_matrix[i][j][k] >= silhouette_threshold):
+                   if (silhouette_matrix[i][j][k[0]] >= silhouette_threshold):
                        subclusters_.append(subcluster)
 
     subclusters_ = unique(subclusters_)
