@@ -194,7 +194,7 @@ def subclusters(X, n, minPts_min, silhouette_threshold, metric = 'precomputed'):
                 d_minPts *= 10
                 
             db_matrix[i].append(np.asarray([db.labels_, db.core_sample_indices_]))
-            silhouette_matrix[i].append(scores(indices, X, db.labels_))
+            silhouette_matrix[i].append(scores(X, indices, db.labels_))
             
             eps += d_eps
         minPts += d_minPts
