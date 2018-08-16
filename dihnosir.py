@@ -187,11 +187,13 @@ class DIHNOSIR:
         """
         
         if unmerge == 'strong':
-            clus = strong_dihnosir(X, **self.get_params())
-        
+            clus = strong_dihnosir(X, self.n, self.minPts_min, self.metric, \
+                                   self.silhouette_threshold, \
+                                   self.ssi_threshold)
         elif unmerge == 'weak':
-            clus = weak_dihnosir(X, **self.get_params())
-            
+            clus = weak_dihnosir(X, self.n, self.minPts_min, self.metric, \
+                                   self.silhouette_threshold, \
+                                   self.ssi_threshold)
         else:
             raise ValueError("unmerge must be either 'strong' or 'weak'.")
         
