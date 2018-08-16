@@ -9,8 +9,8 @@ Reduction
 
 import dihnosir_helper as dh
 
-def strong_dihnosir(X, n = 100, minPts_min = 3, silhouette_threshold = 0.75, 
-                    ssi_threshold = 1, metric = 'precomputed'):
+def strong_dihnosir(X, n = 100, minPts_min = 3, metric = 'precomputed', 
+                    silhouette_threshold = 0.75, ssi_threshold = 1):
     """Perform Strong DIHNOSIR clustering from vector array or distance matrix.
       
     Parameters
@@ -187,12 +187,12 @@ class DIHNOSIR:
         """
         
         if unmerge == 'strong':
-            clus = strong_dihnosir(X, self.n, self.minPts_min, self.metric, \
-                                   self.silhouette_threshold, \
+            clus = strong_dihnosir(X, self.n, self.minPts_min, self.metric, 
+                                   self.silhouette_threshold, 
                                    self.ssi_threshold)
         elif unmerge == 'weak':
-            clus = weak_dihnosir(X, self.n, self.minPts_min, self.metric, \
-                                   self.silhouette_threshold, \
+            clus = weak_dihnosir(X, self.n, self.minPts_min, self.metric, 
+                                   self.silhouette_threshold, 
                                    self.ssi_threshold)
         else:
             raise ValueError("unmerge must be either 'strong' or 'weak'.")
