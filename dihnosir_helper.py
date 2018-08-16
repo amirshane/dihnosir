@@ -67,9 +67,8 @@ def scores(X, labels, metric):
          Average of silhouette sample scores for each cluster.
          
     """
-    scores = np.asarray([])
+    scores = []
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-    
     if (2 <= n_clusters <= len(X)-1):
         samples = silhouette_samples(X, labels, metric = metric)
     elif (n_clusters == 1):
@@ -80,7 +79,8 @@ def scores(X, labels, metric):
     for i in range(n_clusters):
         indices = [k for k, val in enumerate(labels) if val==i]
         score = np.sum(samples[np.asarray(indices)])/len(indices)
-        scores = np.append(scores, np.asarray([score]))
+        scores.append(score)
+    scores = np.asarray(scores)
             
     return scores
 
@@ -194,7 +194,7 @@ def subclusters(X, n, minPts_min, silhouette_threshold, metric = 'precomputed'):
                 d_minPts *= 10
                 
             db_matrix[i].append(np.asarray([db.labels_, db.core_sample_indices_]))
-            silhouette_matrix[i].append(scores(X, indices, db.labels_))
+            silhouette_matrix[i].append(scores(X, db.labels_, metric))
             
             eps += d_eps
         minPts += d_minPts
