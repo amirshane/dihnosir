@@ -324,16 +324,16 @@ def similarity_matrix(subclusters):
         
     """
     n_subclusters = len(subclusters)
+    indices = [i for i in range(n_subclusters)]
     sim_matrix = np.asarray([0.0 for i in range(n_subclusters**2)])
     sim_matrix = np.reshape(sim_matrix, (n_subclusters, n_subclusters))
-    cluster_pairs = itertools.combinations(subclusters, r = 2)
-    for cluster_pair in cluster_pairs:
-        x, y = cluster_pair[0], cluster_pair[1]
-        x_index, y_index = list(subclusters).index(x), list(subclusters).index(y)
-        x_set, y_set = set(x), set(y)
+    pairs = itertools.combinations(indices, r = 2)
+    for pair in pairs:
+        x, y = pair[0], pair[1]
+        x_set, y_set = set(subclusters[x]), set(subclusters[y])
         similarity = ssi(x_set, y_set)
-        sim_matrix[x_index][y_index] += similarity
-        sim_matrix[y_index][x_index] += similarity
+        sim_matrix[x][y] += similarity
+        sim_matrix[y][x] += similarity
 
     return sim_matrix
 
