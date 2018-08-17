@@ -24,7 +24,7 @@ To install DIHNOSIR simply download the 'dihnosir.py' and 'dihnosir_helper.py' f
 
 Demo
 ----
-To see how DIHNOSIR is used download the files in either the "Antibody Data" or "Flip Data" folder. The Python scripts show how to format the files given the data set and the distance values, how a cluster constraint is defined (for this protein dihedral data), and what commands need to be used to compute DIHNOSIR and store the results. (Note that the results in this folder have not been pruned and thus may differ moderately from and published results.
+To see how DIHNOSIR is used download the files in either the "Antibody Data" or "Flip Data" folder. The Python scripts show how to format the files given the data set and the distance values, how a cluster constraint is defined (for this protein dihedral data), and what commands need to be used to compute DIHNOSIR and store the results. (Note that the results in these folders have  been pruned and thus may differ moderately from directly calculated results.)
 
 Development
 -----------
