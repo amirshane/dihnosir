@@ -64,8 +64,8 @@ def max_phipsi_separation(rama_data, x, y):
         x_phi, x_psi = float(x_string[3]), float(x_string[4])
         y_string = rama_data[4*y+i].split()
         y_phi, y_psi = float(y_string[3]), float(y_string[4])
-        d_phi = min(abs(x_phi-y_phi), 180-abs(x_phi-y_phi))
-        d_psi = min(abs(x_psi-y_psi), 180-abs(x_psi-y_psi))
+        d_phi = min(abs(x_phi-y_phi), 360-abs(x_phi-y_phi))
+        d_psi = min(abs(x_psi-y_psi), 360-abs(x_psi-y_psi))
         d = max(d_phi, d_psi)
         max_separation = max(max_separation, d)
     
