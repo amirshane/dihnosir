@@ -106,7 +106,6 @@ def separation_matrix_creator(ramaFile, pickleFile):
     pickle_out = open(pickleFile, "wb")
     pickle.dump(separation_matrix, pickle_out)
     pickle_out.close()
-    print(separation_matrix)
     return separation_matrix
 
 
