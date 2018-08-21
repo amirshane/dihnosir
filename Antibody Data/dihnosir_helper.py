@@ -45,7 +45,7 @@ def cluster_constraint(labels):
     separation_matrix = separation_matrix.reshape(1, -1)[0]
     max_separation = max(separation_matrix)
     
-    if max_separation <= 120:
+    if max_separation <= 150:
         unmerged = True
     else:
         unmerged = False
