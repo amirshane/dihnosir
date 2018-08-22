@@ -33,7 +33,7 @@ def cluster_constraint(labels):
     unmerged : True if unmerged, False if merged. 
         
     """
-    separation_matrix = pickle.load(open('antibody_separation.pickle', 'rb'))
+    separation_matrix = pickle.load(open('flip_separation.pickle', 'rb'))
     
     indices = set([i for i in range(len(separation_matrix))])
     in_indices = set(labels)
