@@ -14,7 +14,7 @@ Y = pickle.load(open('flip_maxdist.pickle', 'rb'))
 # Compute DIHNOSIR
 strong_dist_clustering = dihnosir.DIHNOSIR(n = 250, silhouette_threshold = 0).fit(X, unmerge = "strong")
 strong_dist_labels = strong_dist_clustering.labels_
-# Write result to a text file
+# Write result to a txt file
 f = open('unpruned_strong_flip_dist.txt', 'w')
 for l_ in strong_dist_labels:
     f.write(str(l_))
