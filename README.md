@@ -22,7 +22,12 @@ User Installation and Demonstration
 -----------------------------------
 - To install DIHNOSIR simply download the 'dihnosir.py' and 'dihnosir_helper.py' files and store them in the same directory. DIHNOSIR's documentation is contained in these two files.
 - To see how DIHNOSIR is used download the files in either the "Antibody Data" or "Flip Data" folder. The Python scripts show how to format the files given the data set and the distance values, how a cluster constraint is defined (for this protein dihedral data), and what commands need to be used to compute DIHNOSIR and store the results.
-  - For the antibody data the original data is contained in the file 'antibody_out.txt'. Similarly, 'flip_out.txt' is the original flip data. 
+  - The original, unprocessed data is contained in the files 'flip_out.txt' and 'antibody_out.txt'. The flip data folder also has the file 'flip_plot.txt', which is used for plotting. The calculated distance values are in the files 'flip_dist.txt', 'flip_maxdist.txt', 'antibody_dist.txt', and 'antibody_maxdist.txt'.
+  - First, run 'file_formatting.py'. This will create and store distance matrices in the following pickle files: 'flip_dist.pickle', 'flip_maxdist.pickle', 'antibody_dist.pickle', and 'antibody_maxdist.pickle'. It will also create the angular separation matrices and store them in 'flip_separation.pickle' and 'antibody_separation.pickle'.
+  - The files 'dihnosir.py' and 'dihnosir_helper.py' do not need to be opened unless you would like to modify the cluster constraint, which can be found in 'dihnosir_helper.py'. 
+  - Next, run 'flip_commands.py' or 'antibody_commands.py'. This will calculate DIHNOSIR on the data sets using both distance metrics and both Strong and Weak DIHNOSIR. The unpruned results will be stored to the txt files starting with 'unpruned...'.
+  - Running 'flip_prune.py' and 'antibody_prune.py' will prune the results and store them in the txt files starting with 'pruned...'. This will also create the txt files starting with 'plot...', which are used for plotting the results. 
+  - To plot the results run 'plot_flip.r' or 'plot_antibody.r' with a corresponding plot file and the files 'flip_plot.txt' and 'antibody_out.txt', respectively.
   
 Development
 -----------
