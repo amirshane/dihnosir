@@ -22,7 +22,7 @@ User Installation and Demonstration
 -----------------------------------
 - To install DIHNOSIR simply download the 'dihnosir.py' and 'dihnosir_helper.py' files and store them in the same directory. DIHNOSIR's documentation is contained in these two files.
 - To see how DIHNOSIR is used download the files in either the "Antibody Data" or "Flip Data" folder. The Python scripts show how to format the files given the data set and the distance values, how a cluster constraint is defined (for this protein dihedral data), and what commands need to be used to compute DIHNOSIR and store the results.
-  • For the antibody data the original data is contained in the file 'antibody_out.txt'. Similarly, 'flip_out.txt' is the original flip data. 
+  - For the antibody data the original data is contained in the file 'antibody_out.txt'. Similarly, 'flip_out.txt' is the original flip data. 
   
 Development
 -----------
