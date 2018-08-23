@@ -34,6 +34,7 @@ f = open('plot_strong_flip_dist.txt', 'w')
 for l_ in x:
     for i in range(4):
         f.write(l_)
+        f.write(' ')
 f.close()
 
 # Prune results using Strong DIHNOSIR and maxdist metric
