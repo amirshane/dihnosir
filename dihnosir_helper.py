@@ -404,7 +404,7 @@ def clusters(X, unmerged_subclusters, subcluster_connected_components):
         clusters_.append(cluster)
     
     noise = set(indices).difference(set().union(*clusters_))
-    clusters_ = sorted(clusters_, key = 1)[::-1]
+    clusters_ = sorted(clusters_, key = 1)
     clusters_.append(noise)
     clusters_ = clusters_[::-1]
     
