@@ -41,4 +41,4 @@ Communication
 
 Citation
 --------
-If you use DIHNOSIR in a scientific publication, we would appreciate citations: (paper in publishing process)
+If you use DIHNOSIR in a scientific publication, we would appreciate citations of our [preprint](https://amirpouya.us/DIHNOSIR.pdf).
