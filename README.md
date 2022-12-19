@@ -35,8 +35,8 @@ We encourage users to experiment with and modify DIHNOSIR and would appreciate i
 
 Communication
 -------------
-- Developer Emails: amirshanehsazzadeh@college.harvard.edu, roland.dunbrack@fccc.edu
-- Developer Website: http://amirshanehsazzadeh.com
+- Developer Emails: amir.p.shanehsazzadeh@gmail.com, roland.dunbrack@fccc.edu
+- Developer Website: https://amirpouya.us
 - Dunbrack Lab Website: http://dunbrack.fccc.edu
 
 Citation
